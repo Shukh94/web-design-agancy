@@ -1,0 +1,99 @@
+body {
+  margin: 0px;
+  font-family: Montserrat, sans-serif;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(88, 0, 183);
+}
+
+.menu ul li a:hover {
+}
+
+.banner {
+}
+
+.banner-content {
+  padding-top: 100px;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  width: 200px;
+  font-weight: 700;
+  background: linear-gradient(
+      90deg,
+      rgb(88, 0, 183) 28%,
+      rgb(159, 41, 164) 85%,
+      rgb(186, 61, 155) 100%
+    )
+    text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+}
+
+.banner-content h2 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.banner-content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(101, 101, 101);
+  width: 50%;
+  margin: auto auto 30px;
+  text-align: center;
+}
+
+.banner-content a {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    rgb(88, 0, 183) 28%,
+    rgb(159, 41, 164) 85%,
+    rgb(186, 61, 155) 100%
+  );
+  box-shadow: rgba(88, 0, 183, 0.3) 3px 5px 10px;
+}
+
+.banner-content a:hover {
+  background: rgb(222, 204, 240);
+  color: rgb(88, 0, 183);
+}
+
+.banner-image {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.banner-image img {
+  width: 200px;
+}

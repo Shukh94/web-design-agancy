@@ -3,6 +3,12 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+header {
+  background-image: url(../images/bg-banner-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .header-area {
   display: flex;
   justify-content: space-between;
@@ -13,10 +19,15 @@ body {
   width: 60px;
 }
 
+.menu {
+  margin: auto;
+  width: 241px;
+}
+
 .menu ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .menu ul li a {
@@ -27,10 +38,32 @@ body {
 }
 
 .menu ul li a:hover {
+  text-decoration: underline;
 }
 
-.banner {
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
 }
+.search-bar input {
+  flex: 1;
+  border: 1px solid;
+  border-radius: 60px;
+  border-color: #f7d9ff;
+}
+::placeholder {
+  color: whitesmoke;
+  border-radius: 60px;
+  border: none;
+}
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+}
+
+/* .banner {
+} */
 
 .banner-content {
   padding-top: 100px;

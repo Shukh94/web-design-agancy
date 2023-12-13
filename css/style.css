@@ -104,22 +104,37 @@ header {
 
 .banner-content a {
   font-size: 14px;
+  font-weight: 500;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 50px;
-  background: linear-gradient(
-    90deg,
-    rgb(88, 0, 183) 28%,
-    rgb(159, 41, 164) 85%,
-    rgb(186, 61, 155) 100%
+  padding: 8px 13px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #ba3d9b,
+    #5800b7,
+    #bb03a9,
+    #ba3d9b
   );
-  box-shadow: rgba(88, 0, 183, 0.3) 3px 5px 10px;
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .banner-content a:hover {
-  background: rgb(222, 204, 240);
-  color: rgb(88, 0, 183);
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.banner-content a :focus {
+  outline: none;
 }
 
 .banner-image {

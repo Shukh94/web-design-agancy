@@ -12,9 +12,7 @@ header {
 }
 
 .header-area {
-  position: relative;
   display: flex;
-  justify-content: space-between;
   padding: 20px 0px;
   width: 100%;
 }
@@ -29,6 +27,7 @@ header {
 
 .menu {
   margin: auto;
+  display: inline-block;
 }
 
 .menu ul {

@@ -10,9 +10,13 @@ header {
 }
 
 .header-area {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
+}
+
+nav {
 }
 
 .logo img {
@@ -21,7 +25,7 @@ header {
 
 .menu {
   margin: auto;
-  width: 241px;
+  width: 240px;
 }
 
 .menu ul {
@@ -35,10 +39,24 @@ header {
   font-size: 16px;
   font-weight: 500;
   color: rgb(88, 0, 183);
+  position: relative;
 }
 
-.menu ul li a:hover {
-  text-decoration: underline;
+.menu ul li a:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #71008e;
+  transition: 0.5s transform ease;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0 50%;
+}
+
+.menu ul li a:hover::before {
+  transform: scale3d(1, 1, 1);
 }
 
 .search-bar {
@@ -52,14 +70,20 @@ header {
   border-radius: 60px;
   border-color: #f7d9ff;
 }
+
 ::placeholder {
   color: whitesmoke;
   border-radius: 60px;
   border: none;
 }
+
 .search-bar button {
   border: 0;
   border-radius: 50%;
+}
+
+.search-bar button i {
+  color: #5308af;
 }
 
 /* .banner {
@@ -98,7 +122,7 @@ header {
   font-weight: 300;
   color: rgb(101, 101, 101);
   width: 50%;
-  margin: auto auto 30px;
+  margin: auto auto 40px;
   text-align: center;
 }
 
@@ -144,4 +168,98 @@ header {
 
 .banner-image img {
   width: 200px;
+}
+
+.about-area {
+  display: flex;
+  margin-top: 40px;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  width: 550px;
+}
+
+.about-content {
+  margin: auto;
+  width: 50%;
+}
+
+.about-content h3 {
+  font-size: 30px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.about-content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(101, 101, 101);
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.about-content a {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 7px 13px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #ba3d9b,
+    #5800b7,
+    #bb03a9,
+    #ba3d9b
+  );
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.about-content a:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.contuct_us {
+  background-image: linear-gradient(
+    90deg,
+    rgb(88, 0, 183) 28%,
+    rgb(159, 41, 164) 85%,
+    rgb(186, 61, 155) 100%
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.Contact_content {
+  align-items: center;
+}
+
+.contact_heading h1 {
+  color: rgb(255, 255, 255);
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.btn-contact {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 28px;
+  padding: 14px 45px;
+  transition: 0.4s all ease-in-out;
 }
